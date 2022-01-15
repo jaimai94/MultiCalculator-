@@ -1,7 +1,7 @@
 #include "multiCal.h" // Link to header file
 
-// Run in Windows 10:	.\multical.exe argvName variable1 variable2
-//						.\multical argvName variable1 variable2
+// Run in Windows 10:	.\multiCal.exe argvName variable1 variable2
+//						.\multiCal argvName variable1 variable2
 int main(int argc, char *argv[]){
 	const short maxArguments = 4; // Needs to be adjusted, if more arguments can be used!
 
