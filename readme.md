@@ -4,7 +4,7 @@ This is a calculator for specific computations. It runs in the Windows-CLI for a
 
 # Commands
 v0.1:
-..* Addition: multiCal -add number1 number2
+* Addition: multiCal -add number1 number2
 
 # Getting Started
 To run in Windows 10:
