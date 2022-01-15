@@ -7,9 +7,9 @@ Format:\
 multiCal argvName argument1 argument2
 
 v0.1:
-* Addition: multiCal -add number1 number2\
+	* Addition: multiCal -add number1 number2\
 v0.2:
-* Calculate n days to a date: multiCal -addDTD  day month year daysToAdd
+	* Calculate n days to a date: multiCal -addDTD  day month year daysToAdd
 
 ## Getting Started
 Windows 10:
