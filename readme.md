@@ -10,4 +10,4 @@ v0.1:
 To run in Windows 10:
 1. Open the Windows PowerShell
 2. Press _Strg/Ctrl + Right Mouse Button_ in the folder
-3. Enter _.\multiCal.exe argvName variable1 variable2_ or _.\multiCal argvName variable1 variable2_
+3. Enter __.\multiCal.exe argvName variable1 variable2__ or __.\multiCal argvName variable1 variable2__
