@@ -1,0 +1,8 @@
+# Ignoring Eclipse-data:
+.settings/
+Debug/
+.cproject
+.project
+
+# Ignoring unnecessary files:
+src/leftovers.h
