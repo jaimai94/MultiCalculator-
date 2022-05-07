@@ -1,14 +1,7 @@
-#ifndef SRC_MULTICAL_H_
-#define SRC_MULTICAL_H_
+#include "multiCal++.h"
 
-
-#include <iostream> // Needed for in- and outputs
-#include <string> // Needed for strings
-using namespace std; // Automatic use of std, e.g. std::cout
-
-
-// Main programm functions:
-void basicAddition(float number1, float number2){
+// Calculation functions:
+void addition_Basic(float number1, float number2){
 	cout	<< "\n"
 			<< "The addition of "
 			<< number1
@@ -19,11 +12,8 @@ void basicAddition(float number1, float number2){
 			<< "\n"
 			<< endl;
 }
-const string argvName_basicAddition = "-add";
-const string usage_basicAddition = "  multiCal -add number1 number2 \n";
 
-
-void addDaysToDate(unsigned short day, unsigned short month, int year, int daysToAdd){
+void add_Days_To_Date(unsigned short day, unsigned short month, int year, int daysToAdd){
 	if(	((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) && day > 0 && day < 32)
 		|| ((month == 4 || month == 6 || month == 9 || month == 11) && day > 0 && day < 31)
 		|| (month == 2 && day > 0 && day < 29 && year % 4 != 0 && year % 400 != 0)
@@ -33,7 +23,6 @@ void addDaysToDate(unsigned short day, unsigned short month, int year, int daysT
 		unsigned short storeMonth = month;
 		int storeYear = year;
 		int storeDaysToAdd = daysToAdd;
-
 
 		if(daysToAdd >= 0){ // If daysToAdd is positive or null...
 			for(int i = daysToAdd; i != 0; i--){ // ...then compute days
@@ -55,7 +44,7 @@ void addDaysToDate(unsigned short day, unsigned short month, int year, int daysT
 				}
 			}
 			cout	<< "\n"
-					<< "Calculate "
+					<< "Calculating "
 					<< storeDaysToAdd
 					<< " days to "
 					<< storeDay
@@ -117,16 +106,10 @@ void addDaysToDate(unsigned short day, unsigned short month, int year, int daysT
 				<< endl;
 	}
 }
-const string argvName_addDaysToDate = "-addDTD";
-const string usage_addDaysToDate = "  multiCal -addDTD day month year +/-daysToAdd \n";
-
 
 // Helper and support functions:
-unsigned short stous(string str){ // string to unsigned short
+unsigned short stous(string str){
 	unsigned int uint = stoul(str); // Converting str into unsigned integer
 	unsigned short s = (short)uint; // Converting/Cast unsigned integer to unsigned short
 	return s;
 }
-
-
-#endif /* SRC_MULTICAL_H_ */
