@@ -1,8 +1,0 @@
-General Command Format:
-argv[0]				argv[1]	  argv[2]	  argv[3]	  argv[4]	  argv[5]
-MultiCalculator++	<Command> <Argument1> <Argument2> <Argument3> <Argumen4>
-
-
-All Commands:
-Addition:					-add number1 number2
-Calculate n days to a date:	-addDTD day month year daysToAdd
