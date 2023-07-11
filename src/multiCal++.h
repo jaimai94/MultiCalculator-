@@ -9,7 +9,7 @@ using namespace std;
 
 // Calculation functions:
 float add(float number1, float number2);
-void add_Days_To_Date(unsigned short day, unsigned short month, int year, int daysToAdd);
+void add_Days_To_Date(unsigned short day, unsigned short month, unsigned short year, int daysToAdd);
 
 // Support functions:
 bool program_Checks();

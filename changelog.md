@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## v0.5.2
+- Chhanged in the 'Add to date' function the type of the 'year' variable from 
+  int to unsigned short.
+
+
 ## v0.5.1
 - Fixed some typos
 
@@ -8,7 +13,7 @@ All notable changes to this project will be documented in this file.
 - Added check function around the program.
 - Fixed some bugs in connection with it.
 - 'Add' function will work now with '-p' and 'plus' command.
-- 'Add to a date function' will work now with '-adtd' command.
+- 'Add to date' function will work now with '-adtd' command.
 
 ## v0.4.0
 - Added MIT license to the project.
