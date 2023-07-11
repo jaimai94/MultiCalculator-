@@ -1,10 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## v0.5.3
+- Fixed wrong comments in readme.md
+
 ## v0.5.2
 - Chhanged in the 'Add to date' function the type of the 'year' variable from 
   int to unsigned short.
-
 
 ## v0.5.1
 - Fixed some typos
