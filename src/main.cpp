@@ -1,48 +1,80 @@
-#include <string>
+//#include <string>
 #include "multiCal++.h"
 
 int main(int argc, char *argv[]){
-//	bool continueInput = true;
-	const short maxArguments = 6; // Needs to be adjusted, if more arguments can be used!
-//	string commandInput;
-//	char lastInput;
+	const short maxArguments = 6; // Needs to be adjusted, if more than 4 arguments needed!
 
-//	while(continueInput != false){
-		// Start of programm:
-//		cin >> commandInput;
+	if(program_Checks() == true)
+	{
+		bool programLoop = true;
 
-		if(argc == 1){
-			cout	<< "No arguments passed. Please enter a command with its meant arguments. Enter help or usage for more information.\n"
+		if(argc == 4 && string(argv[1]) == "-p")
+		{
+			float sum = add(stof(argv[2]), stof(argv[3]));
+			cout	<< "The addition of "
+					<< stof(argv[2])
+					<< " and "
+					<< stof(argv[3])
+					<< " is "
+					<< sum
+					<< "\n"
 					<< endl;
+			programLoop = false;
 		}
-		if(argc == 2 && (string(argv[1]) == "help" || string(argv[1]) == "Help" || string(argv[1]) == "usage" || string(argv[1]) == "Usage")){
-			cout	<< "usage:\n"
-					<< "-add number1 number2\n"
-					<< "-addDTD day month year +/-daysToAdd"
-					<< endl;
-		}
-//		if(argc >= 2 && argc == 4){
-		if(argc == 4 && string(argv[1]) == "-add"){
-			addition_Basic(stof(argv[2]), stof(argv[3])); // String to float
-		}
-//		if(argc >= 4 && argc <= maxArguments){
-		if(argc == 6 && string(argv[1]) == "-addDTD"){
+		if(argc == 6 && string(argv[1]) == "-adtd")
+		{
 			add_Days_To_Date(stous(argv[2]), stous(argv[3]), stoi(argv[4]), stoi(argv[5]));
 		}
-		if(argc > maxArguments){
+		if(argc > maxArguments)
+		{
 			cout	<< "Too many arguments! Currently allowed: "
 					<< maxArguments
 					<< endl;
 		}
+		if(argc > 2 && string(argv[1]) != "exit")
+		{
+			if(argc == 4 && string(argv[1]) == "plus")
+			{
+				while(programLoop == true)
+				{
+					float number1 = 0;
+					float number2 = 0;
+					cout << "Enter 2 numbers:\n" << endl;
+					cin >> number1;
+					cin >> number2;
+					float sum = add(number1, number2);
+					cout << endl;
+					cout	<< "The addition of "
+							<< number1
+							<< " and "
+							<< number2
+							<< " is "
+							<< sum
+							<< "\n"
+							<< endl;
+					programLoop = continue_Program_Loop();
+				}
+			}
+		}
 
-		// End of programm:
-//		cout	<< "Do you want to compute something else? (y/n)"
-//				<< endl;
-//		cin	>> lastInput;
-//		if(lastInput == 'y' || lastInput == 'Y'){continueInput = false;} // If yes repeat
-//		else if(lastInput == 'n' || lastInput == 'N'){continueInput = false;} // If no continue
-//		else{cout << "Invalid input!" << endl;} // If input ist not y, Y, n or N
-//	}
+		else
+		{
+			if(argc == 1)
+			{
+				cout	<< "No arguments passed. ";
+				cout 	<< "Enter 'help' or 'usage' for more information.\n"
+						<< endl;
+			}
+			if(argc == 2 && (string(argv[1]) == "help" || string(argv[1]) == "Help" || string(argv[1]) == "usage" || string(argv[1]) == "Usage"))
+			{
+				cout	<< "usage:\n"
+						<< "-add <number1> <number2>\n"
+						<< "-adtd <day> <month> <year> <daystoadd>"
+						<< endl;
+			}
+		}
+	}
+	else cout << "Error: Program checks did not pass or failed unintentionally." << endl;
 
 	return 0;
 }
