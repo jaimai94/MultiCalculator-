@@ -14,11 +14,11 @@ practises.
 
 ## List of all commands
 ### Listing of all fast commands:
-- Addition:				-p <n_1> <n_2>
-- Add n days to a date:	-adtd <day> <month> <year> <daystoadd>
+- Addition:				-p n_1 n_2
+- Add n days to a date:	-adtd day month year daystoadd
 
 ### General command format:
-- Addition:				plus <n_1> <n_2>
+- Addition:				plus n_1> <n_2
 
 ### Command type differents:
 You can run fast commands only one time per runtime, while you can run normal 
@@ -26,11 +26,11 @@ commands several times per runtime.
 
 
 ## Program command structure
-MultiCalculator++ <Command> <Argument1> <Argument2> <Argument3> <Argument4>
+MultiCalculator++ Command Argument1 Argument2 Argument3 Argument4
 
 argv[0]: MultiCalculator++
-argv[1]: <Command>
-argv[2]: <Argument1>
-argv[3]: <Argument2>
-argv[4]: <Argument3>
-argv[5]: <Argument4>
+argv[1]: Command
+argv[2]: Argument1
+argv[3]: Argument2
+argv[4]: Argument3
+argv[5]: Argument4
