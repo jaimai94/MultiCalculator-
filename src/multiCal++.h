@@ -6,12 +6,15 @@
 #include <string>
 using namespace std;
 
+
 // Calculation functions:
-void addition_Basic(float number1, float number2);
+float add(float number1, float number2);
 void add_Days_To_Date(unsigned short day, unsigned short month, int year, int daysToAdd);
 
-// Helper and support functions:
-unsigned short stous(string str); // String to unsigned short: converts strings to unsigned shorts
+// Support functions:
+bool program_Checks();
+bool continue_Program_Loop();
+unsigned short stous(string str); // String to unsigned short
 
 
 #endif /* SRC_MULTICAL___H_ */
