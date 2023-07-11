@@ -1,31 +1,26 @@
 # Changelog
-
 All notable changes to this project will be documented in this file.
 
+## v0.5.1
+- Fixed some typos
+
+## v0.5.0
+- Added check function around the program.
+- Fixed some bugs in connection with it.
+- 'Add' function will work now with '-p' and 'plus' command.
+- 'Add to a date function' will work now with '-adtd' command.
+
 ## v0.4.0
-
-### Added
-
-- MIT license to the project.
-- [License document.](https://github.com/johannesEwers/MultiCalculatorPlusPlus/readme.md)
-- [Authors document.](https://github.com/johannesEwers/MultiCalculatorPlusPlus/authors.md)
-
-### Removed
-
-- doc.txt
+- Added MIT license to the project.
+- Added readme.md
+- Added authors.md
+- Removed doc.txt
 
 ## v0.3.0
-
 - Reworked program structures, documentations and functions.
 
 ## v0.2.0
-
-### Added
-
-- Function to calculate _n_ days to a date: -addDTD day month year daysToAdd.
+- Added function to calculate _n_ days to a date: -addDTD day month year daysToAdd.
 
 ## v0.1.0
-
-### Added
-
-- Basic addition function: -add number1 number2.
+- Added basic addition function: -add number1 number2.
