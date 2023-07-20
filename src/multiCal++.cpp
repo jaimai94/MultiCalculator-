@@ -142,21 +142,9 @@ void add_Days_To_Date(unsigned short day, unsigned short month, unsigned short y
 				}
 			}
 			cout	<< "\n"
-					<< "Calculate "
-					<< storeDaysToAdd
-					<< " days to "
-					<< storeDay
-					<< "."
-					<< storeMonth
-					<< "."
-					<< storeYear
-					<< " results in: "
-					<< day
-					<< "."
-					<< month
-					<< "."
-					<< year
-					<< "\n"
+					<< storeDay << "." << storeMonth << "." << storeYear << " "
+					<< storeDaysToAdd << " = "
+					<< day << "." << month << "." << year << "\n"
 					<< endl;
 		}
 	}

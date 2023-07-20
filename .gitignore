@@ -3,6 +3,8 @@
 Debug/
 .cproject
 .project
+.metadata/
+.git/
 
 # Ignoring unnecessary files:
 src/leftovers.h

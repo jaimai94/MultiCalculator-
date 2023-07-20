@@ -11,11 +11,10 @@ int main(int argc, char *argv[]){
 		if(argc == 4 && string(argv[1]) == "-p")
 		{
 			float sum = add(stof(argv[2]), stof(argv[3]));
-			cout	<< "The addition of "
-					<< stof(argv[2])
-					<< " and "
+			cout	<< stof(argv[2])
+					<< " + "
 					<< stof(argv[3])
-					<< " is "
+					<< " = "
 					<< sum
 					<< "\n"
 					<< endl;
@@ -44,11 +43,10 @@ int main(int argc, char *argv[]){
 					cin >> number2;
 					float sum = add(number1, number2);
 					cout << endl;
-					cout	<< "The addition of "
-							<< number1
-							<< " and "
+					cout	<< number1
+							<< " + "
 							<< number2
-							<< " is "
+							<< " = "
 							<< sum
 							<< "\n"
 							<< endl;
